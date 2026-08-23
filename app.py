@@ -9,7 +9,7 @@ st.set_page_config(page_title="Proof of Green — Cirata Solar", layout="wide")
 st.title("🔆 Proof of Green: Cirata Floating Solar Digital Twin")
 
 # Public data repo raw URLs
-DATA_REPO = "https://raw.githubusercontent.com/yourusername/proof-of-green-data/main"
+DATA_REPO = "https://raw.githubusercontent.com/tikhala/proof-of-green-data/main"
 VALIDATED_URL = f"{DATA_REPO}/validated_data.csv"
 NFT_LEDGER_URL = f"{DATA_REPO}/nft_ledger.csv"
 
