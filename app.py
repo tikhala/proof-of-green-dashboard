@@ -88,9 +88,23 @@ with tab1:
 with tab2:
     st.subheader("Recent NFT Mints")
     if not nft_ledger.empty:
-        st.dataframe(nft_ledger[["token_id", "tx_hash", "energy_mwh", "co2_kg", "timestamp"]].tail(20))
+        # Show type badges
+        nft_ledger["type_label"] = nft_ledger["nft_type"].replace({
+            "historical_quarterly": "📅 Quarterly",
+            "forward_50gwh": "⚡ 50 GWh Milestone",
+        })
+        st.dataframe(
+            nft_ledger[["token_id", "type_label", "energy_mwh", "co2_kg", "tx_hash", "timestamp"]].tail(20),
+            hide_index=True
+        )
     else:
         st.info("No NFTs minted yet. Pipeline will mint after validation.")
+#with tab2:
+# st.subheader("Recent NFT Mints")
+   # if not nft_ledger.empty:
+    #    st.dataframe(nft_ledger[["token_id", "tx_hash", "energy_mwh", "co2_kg", "timestamp"]].tail(20))
+  #  else:
+    #    st.info("No NFTs minted yet. Pipeline will mint after validation.")
 
 with tab3:
     st.subheader("Monthly Energy Generation")
