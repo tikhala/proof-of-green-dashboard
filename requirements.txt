@@ -1,9 +1,0 @@
-requests
-pandas
-numpy
-python-dotenv
-web3==6.16.0
-py-solc-x
-plotly
-streamlit
-scikit-learn
