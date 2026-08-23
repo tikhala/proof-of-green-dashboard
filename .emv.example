@@ -1,0 +1,19 @@
+# NASA POWER (no key required, but can set for future)
+NASA_API_URL=https://power.larc.nasa.gov/api/temporal/hourly/point
+
+# PVGIS
+PVGIS_API_URL=https://re.jrc.ec.europa.eu/api/v5_2/seriescalc
+
+# Web3
+RPC_URL=https://rpc-amoy.polygon.technology
+CHAIN_ID=80002
+PRIVATE_KEY=your_wallet_private_key_here
+ACCOUNT_ADDRESS=0xYourWalletAddress
+CONTRACT_ADDRESS=0xDeployedContractAddress
+
+# Data repo (public data repo)
+DATA_REPO_PATH=data
+
+# Optional: GitHub token for pushing data (GitHub Actions only)
+GH_PAT=github_pat_xxx
+PUBLIC_DATA_REPO=yourusername/proof-of-green-data
